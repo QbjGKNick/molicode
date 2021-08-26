@@ -1,0 +1,13 @@
+{
+  "repos": [
+    {
+      "gitUrl": "https://git.citycloud.com.cn:3000/pdp/pdp_autocode_template.git",
+      "branchName": "master",
+      "title": "统一平台Mybatis-Plus增删改查后端模板",
+      "description": "基于统一平台Mybatis-Plus的增删改查后端模板",
+      "author": "统一平台",
+      "homePage": "https://git.citycloud.com.cn:3000/pdp/pdp_autocode_template",
+      "templateRelativePath": "pdp_autocode_template"
+    }
+  ]
+}

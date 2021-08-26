@@ -45,38 +45,38 @@ module.exports = {
     port: 8081,
     proxy: {
       "/conf/": {
-        target: "http://10.10.70.226:8098/",
-        host: "http://10.10.70.226",
+        target: "http://10.10.77.140:8098/",
+        host: "http://10.10.77.140",
         secure: false,
         changeOrigin: true
       },
       "/common/": {
-        target: "http://10.10.70.226:8098/",
-        host: "http://10.10.70.226",
+        target: "http://10.10.77.140:8098/",
+        host: "http://10.10.77.140",
         secure: false,
         changeOrigin: true
       },
       "/sys/": {
-        target: "http://10.10.70.226:8098/",
-        host: "http://10.10.70.226",
+        target: "http://10.10.77.140:8098/",
+        host: "http://10.10.77.140",
         secure: false,
         changeOrigin: true
       },
       "/repo/": {
-        target: "http://10.10.70.226:8098/",
-        host: "http://10.10.70.226",
+        target: "http://10.10.77.140:8098/",
+        host: "http://10.10.77.140",
         secure: false,
         changeOrigin: true
       },
       "/autoCode/": {
-        target: "http://10.10.70.226:8098/",
-        host: "http://10.10.70.226",
+        target: "http://10.10.77.140:8098/",
+        host: "http://10.10.77.140",
         secure: false,
         changeOrigin: true
       },
       "/loginfree/": {
-        target: "http://10.10.70.226:8098/",
-        host: "http://10.10.70.226",
+        target: "http://10.10.77.140:8098/",
+        host: "http://10.10.77.140",
         secure: false,
         changeOrigin: true
       }

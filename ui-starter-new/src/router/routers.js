@@ -1,4 +1,4 @@
-import Main from '@/components/main'
+import Main from "@/components/main";
 
 /**
  * iview-admin中meta除了原生参数外可配置的参数:
@@ -18,18 +18,18 @@ import Main from '@/components/main'
 
 export default [
   {
-    path: '/login',
-    name: 'login',
+    path: "/login",
+    name: "login",
     meta: {
-      title: 'Login - 登录',
+      title: "Login - 登录",
       hideInMenu: true
     },
-    component: () => import('@/view/login/login.vue')
+    component: () => import("@/view/login/login.vue")
   },
   {
-    path: '/',
-    name: '_home',
-    redirect: '/home',
+    path: "/",
+    name: "_home",
+    redirect: "/home",
     component: Main,
     meta: {
       hideInMenu: true,
@@ -37,21 +37,21 @@ export default [
     },
     children: [
       {
-        path: '/home',
-        name: 'home',
+        path: "/home",
+        name: "home",
         meta: {
           hideInMenu: true,
-          title: '首页',
+          title: "首页",
           notCache: true,
-          icon: 'md-home'
+          icon: "md-home"
         },
-        component: () => import('@/view/single-page/home')
+        component: () => import("@/view/single-page/home")
       }
     ]
   },
   {
-    path: '/message',
-    name: 'message',
+    path: "/message",
+    name: "message",
     component: Main,
     meta: {
       hideInBread: true,
@@ -59,19 +59,19 @@ export default [
     },
     children: [
       {
-        path: 'message_page',
-        name: 'message_page',
+        path: "message_page",
+        name: "message_page",
         meta: {
-          icon: 'md-notifications',
-          title: '消息中心'
+          icon: "md-notifications",
+          title: "消息中心"
         },
-        component: () => import('@/view/single-page/message/index.vue')
+        component: () => import("@/view/single-page/message/index.vue")
       }
     ]
   },
   {
-    path: '/own-space',
-    name: 'ownSpace',
+    path: "/own-space",
+    name: "ownSpace",
     component: Main,
     meta: {
       hideInBread: true,
@@ -79,136 +79,136 @@ export default [
     },
     children: [
       {
-        path: 'own-space-page',
-        name: 'ownSpacePage',
+        path: "own-space-page",
+        name: "ownSpacePage",
         meta: {
-          icon: 'md-notifications',
-          title: '个人中心'
+          icon: "md-notifications",
+          title: "个人中心"
         },
-        component: () => import('@/view/own-space/own-space.vue')
+        component: () => import("@/view/own-space/own-space.vue")
       }
     ]
   },
   {
-    path: '/auto-code',
-    name: 'auto-code',
+    path: "/auto-code",
+    name: "auto-code",
     meta: {
-      icon: 'md-plane',
-      title: '自动代码工具'
+      icon: "md-plane",
+      title: "自动代码工具"
     },
     component: Main,
     children: [
       {
-        path: 'configuration',
-        name: 'configuration',
+        path: "configuration",
+        name: "configuration",
         meta: {
-          icon: 'md-list',
-          title: '项目配置'
+          icon: "md-list",
+          title: "项目配置"
         },
-        component: () => import('@/view/auto-code/configuration.vue')
+        component: () => import("@/view/auto-code/configuration.vue")
       },
       {
-        path: 'autoCode',
-        name: 'autoCode',
+        path: "autoCode",
+        name: "autoCode",
         meta: {
-          icon: 'md-code',
-          title: '代码生成'
+          icon: "md-code",
+          title: "代码生成"
         },
-        component: () => import('@/view/auto-code/autoCode.vue')
+        component: () => import("@/view/auto-code/autoCode.vue")
       }
     ]
   },
-  {
-    path: '/project-process',
+  // {
+  //   path: '/project-process',
 
-    name: 'project-process',
+  //   name: 'project-process',
+  //   meta: {
+  //     icon: 'md-cloud-download',
+  //     title: '工程处理'
+  //   },
+  //   component: Main,
+  //   children: [
+  //     {
+  //       path: 'replace',
+  //       name: 'replace',
+  //       meta: {
+  //         icon: 'ios-copy',
+  //         title: '全文替换工具'
+  //       },
+  //       component: () => import('@/view/auto-code/replace.vue')
+  //     },
+  //     {
+  //       path: 'smartSegment',
+  //       name: 'smartSegment',
+  //       meta: {
+  //         icon: 'ios-copy',
+  //         title: 'smartSegment'
+  //       },
+  //       component: () => import('@/view/auto-code/smartSegment.vue')
+  //     }
+  //   ]
+  // },
+  {
+    path: "/moli-tool",
+    name: "tools",
     meta: {
-      icon: 'md-cloud-download',
-      title: '工程处理'
+      icon: "md-hammer",
+      title: "系统工具"
     },
     component: Main,
     children: [
       {
-        path: 'replace',
-        name: 'replace',
+        path: "userList",
+        name: "userList",
         meta: {
-          icon: 'ios-copy',
-          title: '全文替换工具'
+          icon: "md-person",
+          title: "用户管理"
         },
-        component: () => import('@/view/auto-code/replace.vue')
-      },
-      {
-        path: 'smartSegment',
-        name: 'smartSegment',
-        meta: {
-          icon: 'ios-copy',
-          title: 'smartSegment'
-        },
-        component: () => import('@/view/auto-code/smartSegment.vue')
+        component: () => import("@/view/user/list.vue")
       }
+      // {
+      //   path: "browser",
+      //   name: "browser",
+      //   meta: {
+      //     icon: "logo-chrome",
+      //     title: "魔力浏览器"
+      //   },
+      //   component: () => import("@/view/moli-tool/browser.vue")
+      // }
     ]
   },
+  // {
+  //   path: "/help",
+  //   name: "helpCenter",
+  //   meta: {
+  //     icon: "md-help",
+  //     title: "帮助中心"
+  //   },
+  //   component: Main,
+  //   children: [
+  //     {
+  //       path: "autoCodeHelp",
+  //       name: "autoCodeHelp",
+  //       meta: {
+  //         icon: "md-help",
+  //         title: "自动代码帮助中心"
+  //       },
+  //       component: () => import("@/view/help/molicode/autoCodeHelp.vue")
+  //     },
+  //     {
+  //       path: "tableModelHelp",
+  //       name: "tableModelHelp",
+  //       meta: {
+  //         icon: "md-help",
+  //         title: "表模型帮助中心"
+  //       },
+  //       component: () => import("@/view/help/molicode/tableModelHelp.vue")
+  //     }
+  //   ]
+  // },
   {
-    path: '/moli-tool',
-    name: 'tools',
-    meta: {
-      icon: 'md-hammer',
-      title: '系统工具'
-    },
-    component: Main,
-    children: [
-      {
-        path: 'userList',
-        name: 'userList',
-        meta: {
-          icon: 'md-person',
-          title: '用户管理'
-        },
-        component: () => import('@/view/user/list.vue')
-      },
-      {
-        path: 'browser',
-        name: 'browser',
-        meta: {
-          icon: 'logo-chrome',
-          title: '魔力浏览器'
-        },
-        component: () => import('@/view/moli-tool/browser.vue')
-      }
-    ]
-  },
-  {
-    path: '/help',
-    name: 'helpCenter',
-    meta: {
-      icon: 'md-help',
-      title: '帮助中心'
-    },
-    component: Main,
-    children: [
-      {
-        path: 'autoCodeHelp',
-        name: 'autoCodeHelp',
-        meta: {
-          icon: 'md-help',
-          title: '自动代码帮助中心'
-        },
-        component: () => import('@/view/help/molicode/autoCodeHelp.vue')
-      },
-      {
-        path: 'tableModelHelp',
-        name: 'tableModelHelp',
-        meta: {
-          icon: 'md-help',
-          title: '表模型帮助中心'
-        },
-        component: () => import('@/view/help/molicode/tableModelHelp.vue')
-      }
-    ]
-  },
-  {
-    path: '/error_logger',
-    name: 'error_logger',
+    path: "/error_logger",
+    name: "error_logger",
     meta: {
       hideInBread: true,
       hideInMenu: true
@@ -216,38 +216,38 @@ export default [
     component: Main,
     children: [
       {
-        path: 'error_logger_page',
-        name: 'error_logger_page',
+        path: "error_logger_page",
+        name: "error_logger_page",
         meta: {
-          icon: 'ios-bug',
-          title: '错误收集'
+          icon: "ios-bug",
+          title: "错误收集"
         },
-        component: () => import('@/view/single-page/error-logger.vue')
+        component: () => import("@/view/single-page/error-logger.vue")
       }
     ]
   },
   {
-    path: '/401',
-    name: 'error_401',
+    path: "/401",
+    name: "error_401",
     meta: {
       hideInMenu: true
     },
-    component: () => import('@/view/error-page/401.vue')
+    component: () => import("@/view/error-page/401.vue")
   },
   {
-    path: '/500',
-    name: 'error_500',
+    path: "/500",
+    name: "error_500",
     meta: {
       hideInMenu: true
     },
-    component: () => import('@/view/error-page/500.vue')
+    component: () => import("@/view/error-page/500.vue")
   },
   {
-    path: '*',
-    name: 'error_404',
+    path: "*",
+    name: "error_404",
     meta: {
       hideInMenu: true
     },
-    component: () => import('@/view/error-page/404.vue')
+    component: () => import("@/view/error-page/404.vue")
   }
-]
+];
