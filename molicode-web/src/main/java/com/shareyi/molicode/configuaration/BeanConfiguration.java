@@ -1,0 +1,28 @@
+package com.shareyi.molicode.configuaration;
+
+import com.shareyi.molicode.common.chain.HandlerChainFactoryImpl;
+import com.shareyi.molicode.common.utils.Profiles;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * 自定义bean 构建器
+ *
+ * @author david
+ * @date 2018/10/3
+ */
+@Configuration
+public class BeanConfiguration {
+
+
+    @Bean
+    public HandlerChainFactoryImpl chainFactory() {
+        return HandlerChainFactoryImpl.getInstance();
+    }
+
+    @Bean
+    public Profiles createProfiles() {
+        return Profiles.getInstance();
+    }
+
+}

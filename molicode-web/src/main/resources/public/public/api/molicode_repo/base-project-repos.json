@@ -1,0 +1,30 @@
+{
+  "repos": [
+    {
+      "gitUrl": "https://gitee.com/molicode_repo/springboot-base-prj.git",
+      "branchName": "master",
+      "title": "springboot基础工程",
+      "description": "用于springboot初始化的工程",
+      "author": "david",
+      "homePage": "https://gitee.com/molicode_repo/springboot-base-prj",
+      "extConfig": {
+        "replaceExp": "com.shareyi.basespringboot=com.shareyi.user.center\nbaseproject-springboot=usercenter",
+        "dirReplaceExp": "com/shareyi/basespringboot=com/shareyi/user/center",
+        "throwExp": "target, *.iml, .svn, node_modules, .git"
+      }
+    },
+    {
+      "gitUrl": "https://gitee.com/zhangshibin1987/aceadmin-base-prj.git",
+      "branchName": "master",
+      "title": "bootstrap3基础工程",
+      "description": "基于aceadmin的基础工程",
+      "author": "david",
+      "homePage": "https://gitee.com/zhangshibin1987/aceadmin-base-prj.git",
+      "extConfig": {
+        "replaceExp": "com.shareyi.jshow=com.shareyi.user.center\njshow=usercenter",
+        "dirReplaceExp": "com/shareyi/jshow=com/shareyi/user/center",
+        "throwExp": "target, *.iml, .svn, node_modules, .git"
+      }
+    }
+  ]
+}
