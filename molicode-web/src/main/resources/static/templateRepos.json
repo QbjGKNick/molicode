@@ -7,7 +7,7 @@
       "description": "基于统一平台Mybatis-Plus的增删改查后端模板",
       "author": "统一平台",
       "homePage": "https://git.citycloud.com.cn:3000/pdp/pdp_autocode_template",
-      "templateRelativePath": "mybatis-plus-template"
+      "templateRelativePath": "pdp_autocode_template"
     }
   ]
 }
